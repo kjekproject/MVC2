@@ -12,7 +12,7 @@ class Help extends Controller {
 
     public function other($arg = false) {
         
-        require 'models/Help_model.php';
+        require 'models/Help_Model.php';
         $model = new Help_model();
         $this->view->blah = $model->blah();
     }
