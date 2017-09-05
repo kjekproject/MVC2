@@ -34,7 +34,7 @@ class Bootstrap {
                 $this->error();
             }
         } elseif(isset($url[1])) {
-            if(method_exists($controller, $url[1])) {
+            if(method_exists($controller, $url[1])) {               
                 $controller->{$url[1]}();
             } else {
                 $this->error();

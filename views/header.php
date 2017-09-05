@@ -2,7 +2,16 @@
 <html>
 <head>
     <title>Test</title>
-    <link rel="stylesheet" href="<?php echo URL; ?>/public/css/sheet.css"
+    <link rel="stylesheet" href="<?php echo URL; ?>public/css/sheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo URL; ?>public/js/script.js"></script>
+    <?php
+        if(isset($this->js)) {
+            foreach ($this->js as $js) {
+                echo '<script type="text/javascript" src="' . URL . 'views/' . $js . '"></script>';
+            }
+        }
+    ?>
 </head>
 <body>
     
