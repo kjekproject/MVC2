@@ -11,6 +11,7 @@ $(document).ready(function() {
             var id = $(this).attr('rel');
 
             $.post('dashboard/xhrDeleteListing', {'id': id}, function(e) {
+                console.log('dsdssd');
                 delItem.parent().remove();
             }, 'json');
                 
